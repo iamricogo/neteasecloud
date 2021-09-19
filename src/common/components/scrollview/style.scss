@@ -1,0 +1,28 @@
+.scroll-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  * {
+    box-sizing: border-box;
+  }
+  .swiper-slide {
+    height: auto;
+  }
+  .swiper-scrollbar {
+    background: transparent;
+    .swiper-scrollbar-drag {
+      background: rgba(138, 138, 138, 0.8);
+    }
+  }
+  &.swiper-container-horizontal {
+    > .swiper-scrollbar {
+      height: 6px;
+    }
+  }
+
+  &.swiper-container-vertical {
+    > .swiper-scrollbar {
+      width: 6px;
+    }
+  }
+}

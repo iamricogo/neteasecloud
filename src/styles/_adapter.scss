@@ -1,0 +1,20 @@
+html {
+  &.portrait {
+    font-size: calc(100vw / 7.5);
+  }
+
+  &.landscape {
+    font-size: calc(100vw / 13.34);
+  }
+
+  body {
+    width: 100%;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: background-color 0.3s;
+  }
+}

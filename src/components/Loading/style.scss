@@ -1,0 +1,31 @@
+@keyframes loading-ani {
+  0%,
+  100% {
+    @include sprite($sprite-cm2-list-icn-loading1-2x);
+  }
+  25% {
+    @include sprite($sprite-cm2-list-icn-loading2-2x);
+  }
+  50% {
+    @include sprite($sprite-cm2-list-icn-loading3-2x);
+  }
+  75% {
+    @include sprite($sprite-cm2-list-icn-loading4-2x);
+  }
+}
+
+.loading-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  font-size: 20px;
+  color: #5e5e5e;
+  .icon-loading-ani {
+    @include sprite($sprite-cm2-list-icn-loading1-2x);
+    animation: loading-ani 0.5s infinite steps(1, start);
+    animation-fill-mode: both;
+    margin-bottom: 10px;
+  }
+}

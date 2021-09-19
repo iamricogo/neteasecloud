@@ -1,0 +1,26 @@
+.message-box-container {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  .message-box {
+    padding: 50px 20px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fec305;
+    text-align: center;
+    font-size: 20px;
+    background: rgba(5, 13, 9, 0.9);
+    border-radius: 5px;
+  }
+}

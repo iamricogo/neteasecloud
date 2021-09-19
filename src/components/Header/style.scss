@@ -1,0 +1,9 @@
+#app {
+  #fixed-box {
+    .header-component {
+      height: $headerHeight;
+      background-color: $mainColor;
+      padding-top: 45px;
+    }
+  }
+}

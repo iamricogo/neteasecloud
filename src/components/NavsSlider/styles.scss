@@ -1,0 +1,64 @@
+.navs-slider-component {
+  $navsHeight: 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .navs-container {
+    position: relative;
+    width: 100%;
+    height: $navsHeight;
+    border-bottom: 1px solid #2a2a2a;
+
+    > .swiper-container {
+      .swiper-slide {
+        width: auto;
+        .tabs-wrapper {
+          display: inline-block;
+          font-size: 0;
+          white-space: nowrap;
+          height: 100%;
+          position: relative;
+          > .nav-line {
+            display: inline-block;
+            min-width: 84px;
+            height: 4px;
+            border-radius: 2px;
+            background-color: #ff3545;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: transform 0.3s;
+          }
+          .tabs-item {
+            display: inline-block;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 0 35px;
+            color: white;
+            transition: color 0.3s;
+            height: 100%;
+            &:not(:last-child) {
+              margin-right: 6px;
+            }
+            &.active {
+              color: #ff3a3a;
+            }
+            > div {
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contents-container {
+    height: calc(100% - #{$navsHeight});
+    > .swiper-container {
+      height: 100%;
+    }
+  }
+}
